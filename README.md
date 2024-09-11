@@ -25,29 +25,29 @@ Este es un **portafolio personal** desarrollado utilizando **HTML**, **CSS** y *
 
 ### Página de Inicio
 
-![Página de Inicio](![image](https://github.com/user-attachments/assets/1134bd7a-ca9a-4984-bf6d-fe0b8813636c)
-)
+![image](https://github.com/user-attachments/assets/1134bd7a-ca9a-4984-bf6d-fe0b8813636c)
+
 
 
 ---
 
 ### Sobre Mí
 
-![Sobre Mí](![image](https://github.com/user-attachments/assets/754910ef-1cf8-4b18-926f-6cd484ec09d6)
-)
+![image](https://github.com/user-attachments/assets/754910ef-1cf8-4b18-926f-6cd484ec09d6)
+
 
 ---
 
 ### Habilidades
 
-![Habilidades](![image](https://github.com/user-attachments/assets/35df5396-c611-46b9-a933-21321772ab79)
-)
+![image](https://github.com/user-attachments/assets/35df5396-c611-46b9-a933-21321772ab79)
+
 
 ---
 
 ### Currículum
 
-(![image](https://github.com/user-attachments/assets/5b2304f4-079f-47e0-92fa-a9cfea8c0fd6)
+![image](https://github.com/user-attachments/assets/5b2304f4-079f-47e0-92fa-a9cfea8c0fd6)
 
 
 ---
