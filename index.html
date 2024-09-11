@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Rafa</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#HABILIDADES" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto prueba.jfif" alt="">
+            </div>
+            <h1>RAFAEL SOSA</h1>
+            <h2>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/rafaelsosa93/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#contacto"><i class="fa-solid fa-rss"></i></a>
+                <button onclick="window.location.href='https:/drive.google.com/uc?export=download&id=1VMfoqBwpantJsqPswqpZxf4iKNe_8McN'">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p class="mi-parrafo"><span>Hola, soy Rafael Sosa.</span> 
+                Estoy finalizando mis estudios como Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, donde he adquirido sólidos conocimientos en el desarrollo de aplicaciones móviles, web y de escritorio.<br>
+                <span>Actualmente, estoy en busca de una empresa para realizar mis prácticas profesionales.</span> <br>
+                Estoy entusiasmado por la oportunidad de aplicar lo aprendido y continuar desarrollándome en un entorno profesional. Me apasiona la tecnología y el desarrollo de software, y siempre busco mejorar y enfrentar nuevos desafíos con creatividad y dedicación.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nombre</strong>
+                            Rafael Sosa Linares
+                        </li>
+                        <li>
+                            <strong>Edad</strong>
+                            <time id="edad"></time> años
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +34 685 461 706
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            rafasl1993@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicacion</strong>
+                            Lora del río, Sevilla
+                        </li>
+                        <li>
+                            <strong>Grado</strong>
+                            <span>Tecnico Superior DAM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-desktop"></i>
+                            <span>PC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-basketball"></i>
+                            <span>BASKET</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+<!-- SECCION HABILIDADES -->
+<section class="HABILIDADES" id="HABILIDADES">
+    <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="habilidades-tecnicas">
+            <div class="habilidad">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="habilidad">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="habilidad">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="habilidad">
+                <img src="img/c-sharp.png" alt="C Sharp Icon">
+                <p>C Sharp</p>
+            </div>
+            <div class="habilidad">
+                <i class="fab fa-python python-icon"></i>
+                <p>Python</p>
+            </div>
+            <div class="habilidad">
+                <i class="fab fa-react"></i>
+                <p>React</p>
+            </div>
+            <div class="habilidad">
+                <img src="img/mysql-icon.png" alt="MySQL Icon">
+                <p>MySQL</p>
+            </div>
+            <div class="habilidad">
+                <img src="img/postgresql-icon.png" alt="PostgreSQL Icon">
+                <p>PostgreSQL</p>
+            </div>
+            <div class="habilidad">
+                <i class="fab fa-node-js"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="habilidad">
+                <img src="img/kotlin-icon.png" alt="Kotlin Icon">
+                <p>Kotlin</p>
+            </div>
+            <div class="habilidad">
+                <i class="fab fa-unity"></i>
+                <p>Unity</p>
+            </div>
+            <div class="habilidad">
+                <img src="img/android_studio-icon.png" alt="Android Icon">
+                <p style="white-space: nowrap;">Android Estudio</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo Aplicaciones Multiplataforma</h4>
+                        <span class="casa">Ilerna FP</span>
+                        <span class="fecha">2023 - Actualmente</span>
+                        <p>En Ilerna, me formé en el diseño, desarrollo y mantenimiento de aplicaciones para diversas plataformas. Aprendí a programar en Java, Kotlin, Swift, C#, JavaScript, y a trabajar con bases de datos SQL y NoSQL.<br> Adquirí habilidades en desarrollo de interfaces de usuario, aplicaciones móviles y web, y metodologías ágiles como Scrum y Kanban.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico Superior Administración y Finanzas</h4>
+                        <span class="casa">I.E.S. Axati</span>
+                        <span class="fecha">2013 - 2016</span>
+                        <p>En I.E.S. Axati, completé el Grado Superior en Administración y Finanzas, donde aprendí contabilidad, gestión administrativa, recursos humanos, fiscalidad, y estrategias de comercial y marketing.<br> También adquirí habilidades en el uso de software especializado para la gestión administrativa y financiera.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Administrativo</h4>
+                        <span class="casa">I.E.S. Axati</span>
+                        <span class="fecha">2016</span>
+                        <p>Prácticas realizada en un colegio público como administrativo elaborando informes, documentos, redactando y recogiendo matrículas de alumnos nuevos y antiguos. Tramitación de actas y documentos, gestion de llamadas, mensajería, atención al cliente, etc...</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/prueba calculadora.PNG" alt="Calculadora Interactiva">
+                    <div class="overlay">
+                        <h3>Calculadora Interactiva</h3><br>
+                        <p>Desarrollada en :</p>
+                        <div class="iconos">
+                            <i class="fab fa-html5 icono html"></i>
+                            <i class="fab fa-css3-alt icono css"></i>
+                            <i class="fab fa-js-square icono js"></i>
+                        </div>
+                     <!-- Añadir iconos para GitHub y el proyecto -->
+                     <div class="social-icons">
+                        <a href="https://calculadora-sosa.vercel.app/" target="_blank" class="icono web">
+                            <img src="img/web0.png" alt="Web Icon" class="icono-imagen">
+                            <span class="text">Página Web</span>
+                        </a>
+                        <a href="https://github.com/rafasosadev/calculadoraSosa" target="_blank" class="icono github">
+                            <i class="fab fa-github"></i>
+                            <span class="text">GitHub</span>
+                        </a>
+                        
+                    </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/SosaCars.png" alt="Calculadora Interactiva">
+                    <div class="overlay">
+                        <h3>Aplicación de Alquiler de Coches</h3><br>
+                        <p>Desarrollada en :</p>
+                        <div class="iconos">
+                            <i class="fab fa-react icono react"></i>
+                            <i class="fab fa-node icono node"></i>
+                        </div>
+                     <!-- Añadir iconos para GitHub y el proyecto -->
+                     <div class="social-icons">
+                        <a href="https://sosa-cars.vercel.app/" target="_blank" class="icono web">
+                            <img src="img/web0.png" alt="Web Icon" class="icono-imagen">
+                            <span class="text">Página Web</span>
+                        </a>
+                        <a href="https://github.com/rafasosadev/SosaCars" target="_blank" class="icono github">
+                            <i class="fab fa-github"></i>
+                            <span class="text">GitHub</span>
+                        </a>
+                        
+                    </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="form" class="form" action="https://formspree.io/f/manwnqgk" method="POST">
+                        <label for="nombre" class="hidden">Tu Nombre</label>
+                        <input type="text" id="nombre" name="name" placeholder="Tu Nombre" required>
+    
+                        <label for="correo" class="hidden">Dirección de correo</label>
+                        <input type="email" id="correo" name="email" placeholder="Tu correo electrónico" required>
+    
+                        <label for="mensaje" class="hidden">Mensaje</label>
+                        <textarea id="mensaje" name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+    
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="Mapa">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Lora del Río, Sevilla
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                +34 685461706
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: rafasl1993@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/rafaelsosa93/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#contacto"><i class="fa-solid fa-rss"></i></a>
+        </div>
+        <p>Creado por Rafael Sosa &copy; <span id="currentYear"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
